@@ -6,7 +6,6 @@ import Logo from '@components/Logo'
 import HomePage from '../assets/images/homepage.png'
 
 export default function Home() {
-  console.log(logo); 
   return (
     <div className="container">
       <Head>
@@ -14,12 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Vital Signs Delano" />
         <Logo />
-        {/* <Image
-          src={HomePage}
-          alt="Picture of the author"
-        /> */}
         <p className="description">
         </p>
       </main>
