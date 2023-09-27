@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Image from 'next/image'
-import logo from '../assets/images/homepage.png'
+import Logo from '@components/Logo'
+import HomePage from '../assets/images/homepage.png'
 
 export default function Home() {
   console.log(logo); 
@@ -14,10 +15,11 @@ export default function Home() {
 
       <main>
         <Header title="Vital Signs Delano" />
-        <Image
-          src={logo}
+        <Logo />
+        {/* <Image
+          src={HomePage}
           alt="Picture of the author"
-        />
+        /> */}
         <p className="description">
         </p>
       </main>
