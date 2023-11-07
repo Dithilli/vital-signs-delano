@@ -1,16 +1,9 @@
-.vitalSigns {
-    position: absolute;
 
-}
-
-.tagline {
-    position: absolute;
-
-}
-
-.phoneNumber {
-    position: absolute;
-}
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 200%;
+    }
+  }
 
 .container {
     position: relative;

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import vitalSigns from '../assets/images/Vitalsigns.svg' 
 import tagline from '../assets/images/DesignTagline.svg'
 import phoneNumber from '../assets/images/Phone Number.svg'
-import combinedLogo from '../assets/images/combinedLogo.svg'
+import combinedLogo from '../assets/images/Vital Signs TempHomePage_A.svg'
 
 export default function Logo() {
   const styles = {
