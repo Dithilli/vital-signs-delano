@@ -1,24 +1,22 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
-import Image from 'next/image'
-import Logo from '@components/Logo'
-import HomePage from '../assets/images/homepage.png'
+import React from 'react';
+import { CssBaseline, Box, Container, Grid } from '@mui/material';
+import Sidebar from '@components/Sidebar';
+import PictureLinks from '@components/Picturelinks';
+import BottomBar from '@components/Bottombar';
 
-export default function Home() {
+function Home() {
   return (
-    <div className="container">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Logo />
-        <p className="description">
-        </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="lg">
+        <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
+          <Sidebar />
+          <PictureLinks />
+        </Box>
+        <BottomBar />
+      </Container>
+    </React.Fragment>
+  );
 }
+
+export default Home;
