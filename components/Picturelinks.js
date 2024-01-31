@@ -5,7 +5,7 @@ import signSystems from '/assets/sign_systems.png';
 import delToro from '/assets/del_toro.jpg';
 import nationWide from '/assets/nation_wide_install.jpg';
 import realEstate from '/assets/real_estate.png';
-import monuments from '/assets/monuments.jpg';
+// import monuments from '/assets/monuments.jpg';
 
 const PictureLinks = () => {
   return (
@@ -126,7 +126,7 @@ const PictureLinks = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} key="6">
+          {/* <Grid item xs={12} sm={6} md={4} key="6">
             <Card>
               <CardMedia
                 component="img"
@@ -147,7 +147,7 @@ const PictureLinks = () => {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
+          </Grid> */}
 
       </Grid>
     </Box>
