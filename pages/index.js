@@ -4,6 +4,9 @@ import Sidebar from '@components/Sidebar';
 import PictureLinks from '@components/Picturelinks';
 import BottomBar from '@components/Bottombar';
 
+// background darkblue 84C8E6
+
+
 function Home() {
   return (
     <React.Fragment>
