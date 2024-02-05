@@ -40,12 +40,12 @@ const cardData = [
 // }
 ];
 
-const PictureLinks = () => {
+const PictureLinks = ({ onPictureClick }) => {
   return (
     <Box sx={{ flexGrow: 2, p: 2 }}>
       <Grid container spacing={2}>
         {cardData.map((card, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <Grid item xs={12} sm={6} md={4} key={index} onClick={() => onPictureClick(index)}>
              <Card key={index} style={{ maxWidth: 600, maxHeight: 'auto' }}>
               <CardMedia
                 component="img"
@@ -59,10 +59,9 @@ const PictureLinks = () => {
                   color: 'white',
                   textAlign: 'center',
                   padding: '16px',
-                  textOverflow: 'ellipsis',
                   width: '100%', // Ensure the Typography component spans the full width
                 }}>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h7" fontFamily={'sans-serif'}>
                   {card.title}
                 </Typography>
               </CardContent>
