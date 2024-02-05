@@ -10,27 +10,27 @@ import realEstate from '/assets/home_page/realestate_signs.png';
 const cardData = [
   {
     image: InteriorGraphics,
-    alt: `Placeholder`,
+    alt: `Interior & Exterior Graphics`,
     title: `Interior & Exterior Graphics`,
   },
  {
     image: signSystems,
-    alt: `Placeholder`,
+    alt: `Sign Systems`,
     title: `Sign Systems`,
   },
    {
     image: delToro,
-    alt: `Placeholder`,
+    alt: `Exhibits & Displays`,
     title: `Exhibits & Displays`,
   },
    {
     image: nationWide,
-    alt: `Placeholder`,
+    alt: `Nation-Wide Installation`,
     title: `Nation-Wide Installation`,
   },
    {
     image: realEstate,
-    alt: `Placeholder`,
+    alt: `Real Estate Signage`,
     title: `Real Estate Signage`,
   },
 //   6: {
