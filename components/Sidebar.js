@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import Blah from '../assets/vitalLogo.svg'
+import Blah from '../assets/vital_logo_nonrespond.svg'
 
 const Sidebar = () => {
   return (
