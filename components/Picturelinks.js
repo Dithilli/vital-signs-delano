@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
 import  InteriorGraphics from '/assets/home_page/wm_entrance_graphics.png';
 import signSystems from '/assets/home_page/sign_systems.png';
-import delToro from '/assets/home_page/exhibit_displays.jpg';
+import delToro from '/assets/home_page/exhibits_displays.jpg';
 import nationWide from '/assets/home_page/nation_wide_install.jpg';
 import realEstate from '/assets/home_page/realestate_signs.png';
 import monuments from '/assets/home_page/monuments.jpg';
