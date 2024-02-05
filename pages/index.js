@@ -18,6 +18,10 @@ const theme = createTheme({
 const pictureData = [
   { src: 'https://via.placeholder.com/150', content: 'Content for Picture 1' },
   { src: 'https://via.placeholder.com/150', content: 'Content for Picture 2' },
+  { src: 'https://via.placeholder.com/150', content: 'Content for Picture 3' },
+  { src: 'https://via.placeholder.com/150', content: 'Content for Picture 4' },
+  { src: 'https://via.placeholder.com/150', content: 'Content for Picture 5' },
+  { src: 'https://via.placeholder.com/150', content: 'Content for Picture 6' },
   // Add more pictures as needed
 ];
 

@@ -5,7 +5,7 @@ import signSystems from '/assets/home_page/sign_systems.png';
 import delToro from '/assets/home_page/exhibits_displays.jpg';
 import nationWide from '/assets/home_page/nation_wide_install.jpg';
 import realEstate from '/assets/home_page/realestate_signs.png';
-// import monuments from '/assets/home_page/monuments.jpg';
+import monuments from '/assets/home_page/monuments.jpg';
 
 const cardData = [
   {
@@ -33,11 +33,11 @@ const cardData = [
     alt: `Real Estate Signage`,
     title: `Real Estate Signage`,
   },
-//   6: {
-//     image: monuments,
-//     alt: `Placeholder`,
-//     title: `Monuments`
-// }
+  {
+    image: monuments,
+    alt: `Monuments`,
+    title: `Monuments`
+}
 ];
 
 const PictureLinks = ({ onPictureClick }) => {
