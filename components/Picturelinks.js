@@ -46,7 +46,14 @@ const PictureLinks = ({ onPictureClick }) => {
       <Grid container spacing={2}>
         {cardData.map((card, index) => (
           <Grid item xs={12} sm={6} md={4} key={index} onClick={() => onPictureClick(index)}>
-             <Card key={index} style={{ maxWidth: 600, maxHeight: 'auto' }}>
+             <Card       sx={{
+                    maxWidth: 345,
+                    transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+                    '&:hover': {
+                      transform: 'scale(1.05)', // Grows the card by 5%
+                      boxShadow: '0px 0px 20px rgba(0,0,0,0.6)', // Enhances shadow
+                    },
+                  }} key={index} style={{ maxWidth: 600, maxHeight: 'auto' }}>
               <CardMedia
                 component="img"
                 height="300"
