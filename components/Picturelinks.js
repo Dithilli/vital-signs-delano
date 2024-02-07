@@ -10,8 +10,8 @@ import monuments from '/assets/home_page/monuments.jpg';
 const cardData = [
   {
     image: InteriorGraphics,
-    alt: `Interior & Exterior Graphics`,
-    title: `Interior & Exterior Graphics`,
+    alt: `Interior Graphics`,
+    title: `Interior Graphics`,
   },
  {
     image: signSystems,

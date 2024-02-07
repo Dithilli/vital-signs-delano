@@ -3,6 +3,7 @@ import { CssBaseline, Box, Container, ThemeProvider, createTheme, Typography } f
 import Sidebar from '@components/Sidebar';
 import PictureLinks from '@components/Picturelinks';
 import BottomBar from '@components/Bottombar';
+import PictureBox from '@components/PictureBox';
 
 // Create a theme instance and set the global background color
 const theme = createTheme({
@@ -22,7 +23,6 @@ const pictureData = [
   { src: 'https://via.placeholder.com/150', content: 'Content for Picture 4' },
   { src: 'https://via.placeholder.com/150', content: 'Content for Picture 5' },
   { src: 'https://via.placeholder.com/150', content: 'Content for Picture 6' },
-  // Add more pictures as needed
 ];
 
 function Home() {
@@ -31,12 +31,10 @@ function Home() {
   const contentRef = useRef(null);
 
   const handlePictureClick = (index) => {
-    console.log("click on pic")
-    setSelectedPicture(pictureData[index]);
+    setSelectedPicture(index);
   };
 
   const handleClickOutside = (event) => {
-    console.log("event.target", event.target)
     if (contentRef.current && !contentRef.current.contains(event.target)) {
       setSelectedPicture(null); // Clear selection if click is outside the content
     }
@@ -63,10 +61,7 @@ function Home() {
               <PictureLinks onPictureClick={handlePictureClick} />
             ) : (
               <div  ref={contentRef}>
-                <img src={selectedPicture.src} alt="Selected" style={{ maxWidth: '100%', height: 'auto' }} />
-                <Typography variant="body1" style={{ marginTop: '20px' }}>
-                  {selectedPicture.content}
-                </Typography>
+              <PictureBox pictureIndex={selectedPicture}  onPictureClick={handlePictureClick}  onClose={() => setSelectedPicture(null)} />
               </div>
             )}
           </Box>
